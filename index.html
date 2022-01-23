@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            nav{
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(82, 43, 119);
+                position: fixed;
+                top : 0px;
+                font-size: xx-large;
+                left: 0px;
+                right: 0px;
+                padding: 30px 30px 30px 30px;
+                color: burlywood;
+                background-image: linear-gradient(to right, rgb(64, 29, 97),rgb(105, 62, 146));
+                
+            }
+            .nav-link{
+                padding: 20px 20px 10px 20px;
+            }
+            a:link {
+                color: rgb(153, 133, 177);
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: rgb(221, 161, 161);
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            #welcome-section{
+                background-color: rgb(115, 132, 209);
+                padding-top: 170px ;
+                
+                left: 0px;
+                height: 100vh;
+                width: 100vw;
+                text-align: center;
+                font-size: x-large;
+                background-image: linear-gradient(to right,rgb(62, 82, 170), rgb(115, 132, 209));
+            }
+
+            h1{
+                font-size: 60px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(37, 37, 37);
+            }
+            h2{
+                padding-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: rgb(0, 0, 0);
+            }
+            p{
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-style: italic;
+                color: rgb(0, 0, 0);
+                
+            }
+
+            #projects{
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(148, 102, 110);
+                background-image:linear-gradient(to right,rgb(170, 59, 78), rgb(184, 94, 109));
+            }
+            .project-tile{
+                color: black;
+                padding: 30px 15px 30px 15px;
+            }
+            img{
+                height: 300px;
+                width: auto;
+            }
+
+            #profile-lin{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                background-image: linear-gradient(to right, rgb(64, 29, 97),rgb(105, 62, 146));
+            }
+            @media only screen and (max-width: 600px) {
+            #welcome-section {
+                background-image: linear-gradient(to right, rgb(240, 182, 58),rgb(190, 149, 60));
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <nav id = "navbar">
+            <a class = "nav-link" href="#welcome-section">about me</a>
+            <a class = "nav-link" href= "#projects">my work</a>
+            <a class = "nav-link" href= "#profile-lin">contact</a>
+        </nav>
+
+        <div id = "welcome-section">
+            <h1>I am Sanjeev Singh Rawat</h1>
+            <p>a programming enthusiast and a digital artist :)</p>
+            <img src="myPotrait.jfif" alt="My potrait">
+        </div>
+
+        <div id = "projects">
+            <h2>My Projects made with Responsive Web Design</h2>
+            
+            <div class = "project-tile">
+                <p>Tribute Page to Alan Turing</p>
+                <a href = "https://codepen.io/tobixoxo/pen/JjrByeO" target="_blank">click here</a>
+            </div>
+            <div class = "project-tile">
+                <p>Product Landing Page </p>
+                <a href = "https://codepen.io/tobixoxo/pen/XWePgjx" target="_blank">click here</a>
+            </div>
+            <div class = "project-tile">
+                <p>Technical documentation page on Python</p>
+                <a href = "https://codepen.io/tobixoxo/pen/bGoxvEg" target="_blank">click here</a>
+            </div>
+            <div class = "project-tile">
+                <p>Survey form page for Music recommendations</p>
+                <a href = "https://codepen.io/tobixoxo/pen/VwMBGYb" target="_blank">click here</a>
+            </div>
+        </div>
+        <div id = "profile-lin">
+            <h2>Find me here :)</h2>
+            <a href= "https://www.freecodecamp.org/fcce8e90771-6c14-4c8b-a967-905b7ec403e0" target="_blank">freeCodeCamp</a>
+            <a id = "profile-link" href = "https://github.com/tobixoxo" target="_blank">Github</a>
+            <a href = "https://www.instagram.com/Sanjeev.draws/" target="_blank">instagram</a>
+        </div>
+
+    </body>
+</html>
